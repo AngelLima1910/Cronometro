@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Practica';
+    public mensaje : string  = '';
+    public actualizar(tiempo: number) : void {
+        this.mensaje = tiempo + ' (se actualiza cada 10 segundos)';
+    }
 }
